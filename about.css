@@ -1,0 +1,83 @@
+
+body, html {
+  color: #777;
+  line-height: 1.8;
+}
+.bgimg-1 {
+    /* background: url(Road.jpg); */
+    /* background-image: url('Con.jpg'); */
+    /* background-color: white; */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .bgimg-1 img {
+    /* opacity: 0.60; */
+    border-radius: 4px;
+    height: 50%;
+    width: 100%;
+    text-align: center !important;
+  }
+
+ .info img {
+    margin-left: 44vw;
+    border-radius: 4px;
+    width: 180px;
+    height: 320px;
+    text-align: center !important;
+  }
+
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1 {
+    min-height: 400px;
+  }
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0001;
+  color: white;
+  text-align: center;
+}
+
+.content h3{
+  margin-left: 20px;
+  text-align: center;
+}
+
+
+.content p {
+  display: block;
+  letter-spacing: 0.137em;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+  padding: 0;
+}
+
+.content {
+  align-items: center;
+}
+
+p, em{
+  /* text-decoration: line-through; */
+  text-align: center;
+}
+
+footer .section a {
+  color: black;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.copyRight {
+  color: black;
+}

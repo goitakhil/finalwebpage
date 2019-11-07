@@ -1,0 +1,66 @@
+body, h3 {
+  font-family: "Lato", sans-serif;
+}
+
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+.bgimg-1 {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .bgimg-1 img {
+    /* opacity: 0.60; */
+    border-radius: 4px;
+    height: 50%;
+    width: 100%;
+    text-align: center !important;
+  }
+
+.contact {
+  text-align: center;
+}
+
+.contact {
+  box-sizing: border-box;
+}
+
+
+h3 {
+  letter-spacing: 3px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0001;
+  color: white;
+  text-align: center;
+}
+
+
+.content {
+  align-items: center;
+}
+
+footer .section a {
+  color: black;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.copyRight {
+  color: black;
+}
