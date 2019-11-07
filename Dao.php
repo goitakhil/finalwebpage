@@ -2,10 +2,10 @@
 require_once 'KLogger.php';
 
 class Dao {
-	private $host = "localhost";
-	private $db = "loginstore";
-	private $user = "root";
-	private $pass = "";
+	private $host = "us-cdbr-iron-east-05.cleardb.net";
+	private $db = "heroku_04a7fd210a3df56";
+	private $user = "b3c6e19fce391d";
+	private $pass = "f9c14511";
 	protected $logger;
 
 	public function __construct () {
