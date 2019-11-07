@@ -40,7 +40,7 @@
 				<li><a href="index.php">Home</a></li>
 				<li><a href="gallery.php "></i>Gallery</a></li>
 				<li><a href="howto.php">How To?</a></li>
-				<li><a href="About.php">About Me</a></li>
+				<li><a href="about.php">About Me</a></li>
 				<li><a href="contact.php">Contact</a></li>
 				<li><a href="login.php"> Login</a></li>
 
