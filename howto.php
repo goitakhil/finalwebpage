@@ -4,7 +4,7 @@
 </div>
 <div class="contentht">
   <h1>Tips for Beginners</h1>
-  <img src="image1.jpg" alt="">
+  <img src="image1.JPG" alt="">
   <p>Following are the great tips on how to begins your photography journey. These are the
     tips that helps me get over my photography mistakes. </p>
   <h2>1. Master your Phone Camera.</h2>

@@ -5,7 +5,7 @@ session_start();
 <html>
 <head>
 	<center>
-	<?php require_once("header.php");
+	<?php require_once("signupheader.php");
   ?>
 </center>
 <link rel="stylesheet" href="signup.css">

@@ -1,6 +1,11 @@
+<?php
+	session_start();
+	if( !(isset($_SESSION['loggedIn']))){
+	  header("Location: index.php");
+	}
+?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Aki Photography</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -19,7 +24,7 @@
 <body>
 	<div class="top">
 		<div class="mylogo">
-			<a class="signLog" href="index.php">
+			<a class="signLog" href="homepage.php">
 				<img alt="akilogo" src="mylogo.png">
 			</a>
 		</div>
@@ -37,12 +42,12 @@
 		<nav>
 			<ul>
 				<!-- <li><a href="#logo">Home</a></li> -->
-				<li><a href="index.php">Home</a></li>
+				<li><a href="homepage.php">Home</a></li>
 				<li><a href="gallery.php "></i>Gallery</a></li>
 				<li><a href="howto.php">How To?</a></li>
 				<li><a href="about.php">About Me</a></li>
 				<li><a href="contact.php">Contact</a></li>
-				<li><a href="login.php"> Login</a></li>
+				<li><a href="logout.php"> Logout</a></li>
 
 			</ul>
 		</nav>

@@ -74,17 +74,22 @@ function exist_account($eml, $passWord) {
 
 if($_SESSION['valid']){
 	if(exist_account($email, $pass) > 0){
-	 $_SESSION['loggedIn'] = true;
-		header('Location: allgallery.php');
+		$_SESSION['loggedIn'] = true;
+		$_SESSION['username'] = $email;
+		header('Location: homepage.php');
 	}
-	else if(!isset($_SESSION['passwordErr'])){
-			$_SESSION['passwordErr']="Please enter correct password";
-			$_SESSION['formInput'] =$_POST;
-			header('Location: login.php');
+	else{
+		if(!isset($_SESSION['passwordErr'])){
+	 		$_SESSION['passwordErr']="Please enter correct password";
+	 		$_SESSION['formInput'] =$_POST;
+	 		header('Location: index.php');
+	 }
+
 	}
 }
 else{
-	header('Location: allgallery.php');
+	header('Location: index.php');
 }
 exit;
+
 ?>

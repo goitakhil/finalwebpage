@@ -49,7 +49,7 @@ class Dao {
 	public function createUser ($email, $password, $password2) {
         $this->logger->LogInfo("getting password [{$email}]");
         $conn = $this->getConnection();
-				$saveQuery = "insert into usersdata ( email, password, password2) values (:email, :password, :password2)";
+				$saveQuery = "INSERT INTO usersdata ( email, password, password2) VALUES (:email, :password, :password2)";
         $q = $conn->prepare($saveQuery);
 				$q->bindParam(":email", $email);
 
@@ -62,8 +62,8 @@ class Dao {
 			public function verify_Password ($email, $password){
 				$this->logger->LogInfo("getting password [{$email}]");
         $conn = $this->getConnection();
-				$q = $conn->prepare("SELECT count(email) from usersdata where email = :mail And  password = :password");
-				$q->bindParam(":mail", $email);
+				$q = $conn->prepare("SELECT count(email) from usersdata where email = :email And  password = :password");
+				$q->bindParam(":email", $email);
 
   			$q->bindParam(":password", $password);
         $q->execute();

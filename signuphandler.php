@@ -1,7 +1,4 @@
 <?php
-/*
-Handler for signup page
-*/
 require_once 'Dao.php';
 session_start();
 $email = $password = $password2 = "";
@@ -87,7 +84,7 @@ if($_SESSION['valid'])
 		$password= hash("sha256", $password);  // password encryption
 	$password2= hash("sha256", $password2);  // password encryption
 		$dao->createUser($email,$password, $password2);
-		header('Location: login.php');
+		header('Location: index.php');
 	}
 else{
 		$_SESSION['formInput'] = $_POST;
